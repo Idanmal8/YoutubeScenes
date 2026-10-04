@@ -1,15 +1,18 @@
 {
-  "name": "ys-tmp",
+  "name": "youtube-scenes",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Code-driven motion graphics templates for YouTube videos",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "@remotion/zod-types": "4.0.532",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.532"
+    "remotion": "4.0.532",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.532",
@@ -23,6 +26,8 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "render": "remotion render",
+    "render:all": "remotion render ThumbnailScroll out/ThumbnailScroll.mp4 && remotion render SwipeTransition out/SwipeTransition.mov && remotion render SubscribeReminder out/SubscribeReminder.mov && remotion render LikeShareSubscribe out/LikeShareSubscribe.mov && remotion render LowerThird out/LowerThird.mov"
   }
 }
